@@ -42,17 +42,18 @@ python main.py
 ```text
 gestor-tareas-ciclos-ibero/
 │
-├── main.py                  
-├── gestor.py                
-├── HISTORIAS_USUARIO.md     
-├── README.md               
-└── .gitignore       
+├── main.py
+├── gestor.py
+├── HISTORIAS_USUARIO.md
+├── README.md
+└── .gitignore
+```
 
 > La estructura puede variar conforme evolucione el proyecto.
 
 ---
 
-## Tecnologías utilizadas
+## Tecnologías Utilizadas
 
 - Python 3
 - Programación Orientada a Objetos (POO)
@@ -67,16 +68,15 @@ gestor-tareas-ciclos-ibero/
 La documentación funcional del proyecto se encuentra en los siguientes archivos:
 
 - **HISTORIAS_USUARIO.md**: Contiene las historias de usuario, criterios de aceptación y funcionalidades definidas durante el desarrollo.
-- **README.md**: Presenta la descripción general, requisitos, instalación y uso del proyecto.
+- **README.md**: Presenta la descripción general, requisitos, ejecución y uso del proyecto.
 
 ---
 
 ## Autores
 
-
-- **Elian Felipe Gómez Recalde**- **Mariana González Calderón**
-- **Omar Dario Mesa Gómez**
-
+- **Elian Felipe Gómez Recalde**
+- **Mariana González Calderón**
+- **Omar Dario Mesa Gomez**
 
 **Ingeniería de Software**  
 **Corporación Universitaria Iberoamericana**
