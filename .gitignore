@@ -1,0 +1,18 @@
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Archivos de datos locales, reportes y logs de auditoría
+tareas.json
+*.log
+*.csv
+
+# Configuraciones locales de editores
+.vscode/
+.idea/
