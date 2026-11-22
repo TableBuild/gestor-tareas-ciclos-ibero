@@ -24,3 +24,32 @@ def guardar_tareas(tareas):
 def listar_tareas():
     """Retorna todas las tareas registradas en el ciclo académico."""
     return cargar_tareas()
+
+
+def agregar_tarea(titulo, materia, ciclo, fecha_limite, prioridad="Media"):
+    """Registra una nueva tarea academica con validacion basica y estado 'pendiente'."""
+
+    if not titulo.strip() and not materia.strip():
+        raise ValueError("El titulo y la asignatura son campos obligatorios.")
+    if not titulo.strip():
+        raise ValueError("El titulo de la actividad no puede estar vacío.")
+    if not materia.strip():
+        raise ValueError("La asignatura no puede estar vacía.")
+
+    tareas = cargar_tareas()
+    nuevo_id = 1 if not tareas else max(t["id"] for t in tareas) + 1
+
+    nueva_tarea = {
+        "id": nuevo_id,
+        "titulo": titulo.strip(),
+        "materia": materia.strip(),
+        "ciclo": ciclo.strip() or "Ciclo General",
+        "fecha_limite": fecha_limite.strip(),
+        "prioridad": prioridad.strip() or "Media",
+        "estado": "pendiente"
+    }
+
+    tareas.append(nueva_tarea)
+    guardar_tareas(tareas)
+
+    return nueva_tarea
