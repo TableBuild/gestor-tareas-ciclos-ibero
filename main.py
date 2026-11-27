@@ -127,5 +127,5 @@ def main():
             print("[Error] Opción no válida. Intente nuevamente.")
 
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     main()
